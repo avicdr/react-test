@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+  background: #f7f7f7;
+}
+
+nav,
+ul {
+  font-family: cursive;
+  display: flex;
+  list-style: none;
+  background-color: white;
+}
+
+nav > h2 {
+  font-size: 2rem;
+  margin: 0.8rem;
+  color: deeppink;
+}
+
+li {
+  margin: 1.5rem 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+li:nth-child(1) {
+  color: deeppink;
+}
+
+input {
+  width: 18rem;
+  padding: 8px;
+  border-radius: 20px;
+  border: 1px solid black;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Style the navigation menu */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+  display: none;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: #ddd;
+  color: deeppink;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: deeppink;
+  color: white;
+}
+
+.instagram-card {
+  background: #ffffff;
+  border: 1px solid #f2f2f2;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+}
+
+.instagram-card-header {
+  display: flex;
+  padding: 20px;
+  height: 40px;
+}
+
+.instagram-card-user-image {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+}
+
+.instagram-card-time {
+  /* float: right; */
+  width: 80px;
+  /* padding-top: 10px; */
+  text-align: right;
+  color: #999;
+}
+
+.instagram-card-user-name {
+  margin-left: 20px;
+  font-weight: bold;
+  color: #262626;
+}
+
+.instagram-card-content {
+  padding: 20px;
+}
+
+.likes {
+  font-weight: bold;
+}
+
+.instagram-card-content-user {
+  font-weight: bold;
+  color: #262626;
+}
+
+.hashtag {
+  color: #003569;
+}
+
+.comments {
+  color: #999;
+  margin-top: 12px;
+}
+
+.user-comment {
+  color: #003569;
+}
+
+.instagram-card-footer {
+  padding: 0 8px;
+  display: flex;
+  align-items: center;
+}
+
+hr {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  margin-top: 30px;
+  margin-bottom: 0px;
+}
+
+.footer-action-icons {
+  font-size: 16px;
+  color: #ccc;
+}
+
+.comments-input {
+  border: none;
+  margin-left: 10px;
+  width: 100%;
+}
+
+.dateTime {
+  display: flex;
+  flex-direction: column;
+}
+.instagram-card-image {
+  width: inherit;
+}
+.instagram-card-image > img {
+  width: 100%;
+}
+
+.follow {
+  margin: 0 15px;
+  color: deeppink;
+  font-style: bold;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 1000px) {
+  .instagram-card {
+    margin: 12px;
+  }
+  nav{
+    display: none;
+  }
+  .topnav{
+    display: block;
+  }
+}
+
